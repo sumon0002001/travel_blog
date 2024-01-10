@@ -1,3 +1,4 @@
+import { cx } from "@/utils";
 import "./globals.css";
 import { Inter, Manrope } from "next/font/google";
 
@@ -22,7 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${manrope.variable} font-mr bg-light dark:bg-dark`}
+        className={cx(
+          inter.variable,
+          manrope.variable,
+          "font-mr bg-light dark:bg-dark"
+        )}
       >
         {children}
       </body>
