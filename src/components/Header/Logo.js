@@ -15,7 +15,7 @@ const Logo = () => {
           priority
         />
       </div>
-      <span>Sumon's Travel Blog</span>
+      <span className="font-bold text-xl ">Sumon's Travel Blog</span>
     </Link>
   );
 };
