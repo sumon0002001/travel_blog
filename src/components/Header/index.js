@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import Link from "next/link"; // Import Link from Next.js
+import { LinkedinIcon } from "../Icons";
 
 const Header = () => {
   return (
@@ -22,17 +23,23 @@ const Header = () => {
         <button>heloo</button>
       </nav>
       <div className=" hidden sm:flex items-center">
-        <a href="" className="inline-block w-6 h-6 mr-4">
-          Linkedin
+        <a
+          href="https://www.linkedin.com/"
+          className="inline-block w-6 h-6 mr-4"
+        >
+          <LinkedinIcon />
         </a>
-        <a href="" className="inline-block w-6 h-6 mr-4">
-          Twitter
+        <a
+          href="https://twitter.com/?lang=en"
+          className="inline-block w-6 h-6 mr-4"
+        >
+          <LinkedinIcon />
         </a>
-        <a href="" className="inline-block w-6 h-6 mr-4">
-          Github
+        <a href="https://github.com/" className="inline-block w-6 h-6 mr-4">
+          <LinkedinIcon />
         </a>
-        <a href="" className="inline-block w-6 h-6 mr-4">
-          Dribble
+        <a href="https://dribbble.com/" className="inline-block w-6 h-6 mr-4">
+          <LinkedinIcon />
         </a>
       </div>
     </header>
